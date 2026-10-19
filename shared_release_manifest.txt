@@ -1,4 +1,6 @@
 .gitignore
+LICENSE.txt
+NOTICE.md
 README.md
 naver_blog_v3/config/__init__.py
 naver_blog_v3/config/brand.py
