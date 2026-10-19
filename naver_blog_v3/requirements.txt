@@ -1,0 +1,21 @@
+# 네이버 블로그 자동화 v3.0 — Python 패키지
+selenium>=4.18.0
+webdriver-manager>=4.0.1
+Pillow>=10.2.0
+openpyxl>=3.1.2
+pyperclip>=1.8.2
+cryptography>=42.0.0
+customtkinter>=6.0
+
+# ── 멀티채널 팩 (Phase 1, 반자동) ───────────────────
+# - edge-tts: 한국어 TTS (ko-KR-SunHiNeural)
+# - faster-whisper: STT word-level timestamps (CUDA 권장)
+# - PyYAML: _lib/build_multichannel_pack.py 가 publish_brief.yaml 읽을 때
+edge-tts>=6.1.0
+faster-whisper>=1.0.0
+PyYAML>=6.0
+
+# ── 옵트인 라이브 전용 (미설치여도 앱·테스트 정상 — 지연 임포트/주입식) ──
+# - playwright: 젠스파크 「AI 이미지」 CDP 조종(core/genspark_client.py CLI 라이브 경로).
+#   GENSPARK_ENABLED=True 로 실사용할 때만: pip install playwright
+# playwright>=1.40.0
